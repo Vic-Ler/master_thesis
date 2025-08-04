@@ -1,4 +1,4 @@
-# 🌬️ Master Thesis: Measuring Martian Winds by Tracking Clouds in Emirates Mars Mission UV Imaging
+# Master Thesis: Measuring Martian Winds by Tracking Clouds in Emirates Mars Mission UV Imaging
 
 Welcome to the repository accompanying my master's thesis, which explores methods for measuring atmospheric winds on Mars by analyzing cloud movement using UV imagery from the Emirates Mars Mission (EMM).
 
