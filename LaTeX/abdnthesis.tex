@@ -1,0 +1,54 @@
+\documentclass[MSc]{abdnthesis}                                           
+
+\usepackage[super,sort&compress]{natbib}
+\usepackage{placeins}
+\usepackage{url}
+\setlength{\bibsep}{0pt}
+\bibliographystyle{unsrt}
+
+\usepackage[T1]{fontenc}
+
+\title{Measuring Martian winds by tracking clouds in Emirates Mars Mission UV imaging}
+\author{Victoria Lercher}
+\school{Student ID: 52319275}    
+\date{2024}
+
+%% If you want to include only a couple of chapters then use the
+%% \includeonly{} command with a list of the file/chapter names that
+%% you wish to include.  NB, this must be in the preamble.
+
+\includeonly{introduction, data, methods, results, conclusion, references, appendix}
+
+\def\sfthing#1#2{\def#1{\mbox{{\small\normalfont\sffamily #2}}}}
+
+\sfthing{\PP}{P}
+\sfthing{\FF}{F}
+
+\begin{document}
+
+\maketitle
+\makedeclaration
+
+\begin{abstract}
+Understanding wind patterns on Mars is crucial for future human exploration and for enhancing our knowledge of planetary climate dynamics. Despite its significance, Martian winds are still considered a major unknown. This thesis seeks to contribute to filling this gap by utilizing six image sequences from the Emirates Mars Mission's EXI 320 nm ultraviolet observations. A cloud tracking method, Correlation Image Velocimetry (CIV), was employed to derive wind field maps with a time separation of 10 – 30 minutes. Various image processing techniques were tested to potentially optimize CIV performance, and their impacts on the resulting wind fields were analyzed. 
+Using the results obtained from the image sequences pre-processed with contrast limited adaptive histogram equalization (CLAHE), wind fields were compared to those derived in a previous thesis by Shaimaa Ahmed AlBlooki, published in 2023. Her study used three of the same image sequences, but relied on an older version of the image data that was not pointing corrected. Key findings include that while different pre-processing methods in this thesis had a minimal impact on CIV performance overall, CLAHE-processed image sequences resulted in the detection of more velocity vectors compared to differently processed sequences. Additionally, although there are some discrepancies between the wind fields presented here and those in Al Blooki's study, the general wind direction trends remain consistent.
+\linebreak
+\linebreak
+\textbf{Keywords:} Mars, Atmosphere, Cloud Tracking, Correlation Imaging Velocimetry 
+(CIV), Image processing, Wind Fields. 
+\end{abstract}
+
+\tableofcontents
+\listoftables
+\listoffigures
+
+\include{introduction}
+\include{data}
+\include{methods}
+\include{results}
+\include{conclusion}
+\bibliography{references}
+\appendix
+\include{appendix}
+
+\end{document}
